@@ -1,0 +1,37 @@
+// navigation
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-family: sans-serif;
+    // position:fixed;
+    width: 100%;
+    background: white;
+
+    .logo-container{
+        margin-left: 40px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+        width: 350px;
+        
+        
+
+        li{
+            display: inline;
+            text-decoration: none;
+            list-style: none;
+            
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
