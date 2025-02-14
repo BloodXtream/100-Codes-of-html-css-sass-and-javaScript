@@ -1,0 +1,665 @@
+@mixin light-weight-font {
+    font-weight: 200;
+    opacity: 1;
+    font-size: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    padding: .8rem;
+}
+
+main {
+    padding: 1rem;
+    padding-top: 2rem;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.navs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        svg {
+            width: 4rem;
+            aspect-ratio: 1/1;
+        }
+    }
+
+    .nav-items {
+        a {
+            display: none;
+        }
+
+        button {
+            padding: .5rem;
+            border-radius: .2rem;
+            background-color: black;
+            color: rgb(247, 234, 218);
+            width: fit-content;
+        }
+
+        .circle {
+            display: none;
+        }
+    }
+}
+
+.view-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    p {
+        @include light-weight-font;
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size: 4rem;
+        width: 70%;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+
+    }
+}
+
+.view-2 {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+
+    .top {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+
+        p {
+            @include light-weight-font;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+            width: 90%;
+        }
+
+        button {
+            padding: 1rem;
+            border-radius: .6rem;
+            background-color: black;
+            color: rgb(247, 234, 218);
+            width: fit-content;
+        }
+    }
+
+    .line {
+        background-color: black;
+        height: 1px;
+    }
+
+    .bottom {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+
+        .elem {
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+
+            svg {
+                width: 4rem;
+                aspect-ratio: 1/1;
+            }
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 400;
+            }
+
+            p {
+                @include light-weight-font;
+            }
+        }
+    }
+}
+
+.seperation {
+    .line {
+        height: 1px;
+        width: 100%;
+        background-color: black;
+        margin-top: 3rem;
+        margin-bottom: 2.4rem;
+
+    }
+}
+
+.view-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 200;
+            width: 40%;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            opacity: 1;
+            width: 80%;
+        }
+    }
+
+    .line {
+        background-color: black;
+        height: 1px;
+
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .elems {
+            .elem {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                video {
+                    object-fit: cover;
+                    width: 100%;
+                    border-radius: 1rem;
+                    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+                }
+
+                h3 {
+                    font-size: 11px;
+                }
+            }
+
+            .elem-two {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+}
+
+.view-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .first {
+            svg {
+                width: 4rem;
+                aspect-ratio: 1/1;
+            }
+        }
+
+        .second {
+            p {
+                @include light-weight-font;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    .line {
+        height: 1px;
+        width: 100%;
+        background-color: black;
+        display: none;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        p {
+            @include light-weight-font;
+        }
+
+        button {
+            padding: .5rem;
+            border-radius: .6rem;
+            background-color: black;
+            color: rgb(247, 234, 218);
+            width: fit-content;
+        }
+    }
+}
+
+.view-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        svg {
+            width: 4rem;
+            aspect-ratio: 1/1;
+        }
+
+        .top-one {
+            display: flex;
+            gap: 2rem;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .top-two {
+            p {
+                font-size: 1rem;
+                font-weight: 400;
+                opacity: 1;
+            }
+        }
+
+        .top-three {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            p {
+                font-size: 1rem;
+                border: 1px solid black;
+                border-radius: 4rem;
+                width: 50px;
+                height: 50px;
+                padding: 1rem;
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+
+    .line{
+        background-color: black;
+        height: 1px;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .elems {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            
+            .elem{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                h1{
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                }
+
+                p{
+                    font-size: 1rem;
+                    font-weight: 400;
+                    padding: .1rem;
+                }
+            }
+        }
+    }
+}
+
+.floting{
+    position: relative;
+    p{
+        position: sticky;
+        top: 0;
+        z-index: 7;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+
+@media (min-width:1020px) {
+    main {
+        padding: 3rem;
+    }
+
+    .view-1 {
+        h1 {
+            font-size: 6rem;
+            font-weight: 500;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+            object-position: top;
+        }
+    }
+
+    .view-2 {
+        flex-direction: row;
+        margin-top: 3.5rem;
+
+        .top {
+            width: 67%;
+            justify-content: space-between;
+
+            h1 {
+                top: 0;
+                font-size: 4.3rem;
+            }
+        }
+
+        .line {
+            height: initial;
+            width: 1px;
+        }
+
+        .bottom {
+            width: 33%;
+
+            .line {
+                height: 1px;
+                width: 100%;
+            }
+        }
+    }
+
+    .view-3 {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        .top {
+            display: flex;
+            width: 33%;
+            position: relative;
+
+            .sticky {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                position: sticky;
+                top: 0;
+                z-index: 2;
+
+
+                h1 {
+                    font-size: 3rem;
+
+                }
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 300;
+                    opacity: 1;
+                    width: 80%;
+                }
+            }
+        }
+
+        .line {
+            width: 1px;
+            height: initial;
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            width: 67%;
+
+            .elems {
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+
+                .elem {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+
+                    video {
+                        object-fit: cover;
+                        width: 100%;
+                        border-radius: 1rem;
+                        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+                    }
+
+                    h1 {
+                        font-size: 2rem;
+                        font-weight: 400;
+                    }
+
+                    h3 {
+                        font-size: 1rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .view-4 {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        height: 35rem;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            gap: 2rem;
+            width: 70%;
+
+            .first {
+                svg {
+                    width: 6rem;
+                    aspect-ratio: 1/1;
+                }
+            }
+
+            .second {
+                p {
+                    @include light-weight-font;
+                }
+
+                h1 {
+                    font-size: 4.5rem;
+                    width: 80%;
+                }
+            }
+        }
+
+        .line {
+            width: 1px;
+            height: 100%;
+            display: block;
+            align-self: stretch;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 2rem;
+            width: 30%;
+
+            p {
+                font-size: 1.3rem;
+            }
+
+            button {
+                padding: .5rem;
+                border-radius: .6rem;
+                background-color: black;
+                color: rgb(247, 234, 218);
+                width: fit-content;
+            }
+        }
+    }
+
+    .view-5 {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    
+        .top {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 33%;
+    
+            svg {
+                width: 4rem;
+                aspect-ratio: 1/1;
+            }
+    
+            .top-one {
+                display: flex;
+                gap: 2rem;
+    
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+    
+            .top-two {
+                p {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    opacity: 1;
+                }
+            }
+    
+            .top-three {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+    
+                p {
+                    font-size: 1rem;
+                    border: 1px solid black;
+                    border-radius: 4rem;
+                    width: 50px;
+                    height: 50px;
+                    padding: 1rem;
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    
+        .line{
+            background-color: black;
+            width: 1px;
+            height: initial;
+        }
+    
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            gap: 2rem;
+            width: 67%;
+    
+            .elems {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 2rem;
+                
+                .elem{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    h1{
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+    
+                    p{
+                        font-size: 1rem;
+                        font-weight: 500;
+                        padding: .4rem;
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+    }
+}
