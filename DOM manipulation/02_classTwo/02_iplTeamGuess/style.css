@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(8, 7, 7, 0.502);
+  color: white;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+  width: 400px;
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+body .container p {
+  background-color: transparent;
+  font-size: 8rem;
+  align-self: center;
+  border-radius: 20px;
+}
+body .container .btn {
+  align-self: center;
+}
+body .container .btn button {
+  padding: 10px 20px;
+  background-color: rgba(13, 30, 48, 0.649);
+  color: white;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 10px;
+}
+body .container .btn button:active {
+  scale: 0.95;
+  background-color: rgba(4, 3, 31, 0.828);
+}/*# sourceMappingURL=style.css.map */
