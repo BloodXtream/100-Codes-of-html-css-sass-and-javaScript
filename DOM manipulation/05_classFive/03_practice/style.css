@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom, #141e30, #243b55);
+  padding: 3.7rem 4rem;
+  font-family: monospace;
+}
+
+nav {
+  background-color: #1c1f2b;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 360px;
+  height: 270px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: white;
+}
+.card .top {
+  display: flex;
+  justify-content: space-between;
+}
+.card .top img {
+  width: 30px;
+}
+.card .top p {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6666666667);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.card .top p:active {
+  color: #ffc107;
+}
+.card .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card .middle h3 {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.card .middle h3 span {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.card .middle h1 {
+  font-weight: 400;
+}
+.card .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.card .bottom h1 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.card .bottom button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+.card .bottom button:active {
+  background-color: rgba(39, 36, 36, 0.751);
+}/*# sourceMappingURL=style.css.map */
