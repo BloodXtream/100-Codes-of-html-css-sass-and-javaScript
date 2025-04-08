@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #000000ed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+  flex-wrap: wrap;
+
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: start;
+    background-color: #fff;
+    .image {
+      text-align: center;
+      img {
+        width: 100px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
